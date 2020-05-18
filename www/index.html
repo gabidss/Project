@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="./lib/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="./lib/jquery-3.4.1.min.js">
+  <script src="components/calculo.js"></script>
+
+</head>
+<body>
+  <style>
+body{
+      background-color: black;
+      }
+      .col-12{color: white;}
+    </style>
+  <div class="container">
+    <div class="row">
+    <div class="col-12">
+    <center><h1>Calculadora </h1></certer>
+    <HR SIZE=30 WIDTH=2 ALIGN=LEFT>
+    </div>
+  </div>
+  <CENTER>
+<FORM NAME="Calc">
+
+	<TR>
+		<TD ALIGN="CENTER">
+			<INPUT TYPE="text"  NAME="Input" SIZE="30">
+		</TD>
+	</TR>
+  <br>
+  <br>
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-3">
+			<INPUT TYPE="button" NAME="one"
+			VALUE="  1  " onClick="Calc.Input.value += '1'"></div>
+
+       <div class="col-3">
+			<INPUT TYPE="button" NAME="two"
+			VALUE="  2  " onClick="Calc.Input.value += '2'"></div>
+
+       <div class="col-3">
+			<INPUT TYPE="button" NAME="three"
+			VALUE="  3  " onClick="Calc.Input.value += '3'"></div>
+
+       <div class="col-3">
+			<INPUT TYPE="button" NAME="plus"
+			VALUE="  +  " onClick="Calc.Input.value += ' + '"></div>
+
+<br>
+      <br>
+
+       <div class="col-3">
+			<INPUT TYPE="button" NAME="four"
+			 VALUE="  4  " onClick="Calc.Input.value += '4'"></div>
+
+        <div class="col-3">
+			 <INPUT TYPE="button" NAME="five"
+			 VALUE="  5  " onClick="Calc.Input.value += '5'"></div>
+
+        <div class="col-3">
+			 <INPUT TYPE="button" NAME="six"
+			 VALUE="  6  " onClick="Calc.Input.value += '6'"></div>
+
+        <div class="col-3">
+			 <INPUT TYPE="button" NAME="minus"
+			 VALUE="  -   " onClick="Calc.Input.value += ' - '"></div>
+<br>
+      <br>
+			
+       <div class="col-3">
+			 <INPUT TYPE="button" NAME="seven"
+			 VALUE="  7  " onClick="Calc.Input.value += '7'"></div>
+
+        <div class="col-3">
+			 <INPUT TYPE="button" NAME="eight"
+			 VALUE="  8  " onClick="Calc.Input.value += '8'"></div>
+
+        <div class="col-3">
+			 <INPUT TYPE="button" NAME="nine"
+			 VALUE="  9  " onClick="Calc.Input.value += '9'"> </div>
+
+       <div class="col-3">
+			 <INPUT TYPE="button" NAME="times"
+			 VALUE="  x  " onClick="Calc.Input.value += ' * '"></div>
+
+		<br>
+      <br>
+       <div class="col-3">
+			<INPUT TYPE="button" NAME="clear"
+			 VALUE="  c  " onClick="Calc.Input.value = ''"></div>
+
+        <div class="col-3">
+			 <INPUT TYPE="button" NAME="zero"
+			 VALUE="  0  " onClick="Calc.Input.value += '0'"></div>
+
+        <div class="col-3">
+			 <INPUT TYPE="button" NAME="DoIt"
+			 VALUE="  =  " onClick="Calc.Input.value = eval(Calc.Input.value)"></div>
+
+        <div class="col-3">
+			 <INPUT TYPE="button" NAME="div"
+			 VALUE="  /   " onClick="Calc.Input.value += ' / '"></div>
+       </div>
+    </div>
+		
+</FORM>
+</CENTER>     
+</body>
+</html>
+
+<!-- fazer os buttons e o script -->
